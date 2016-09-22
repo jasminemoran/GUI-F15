@@ -1,0 +1,101 @@
+/*
+
+    Jasmine Moran, jasmine_moran@student.uml.edu
+    University of Massachusetts Lowell Computer Science Undergraduate
+    91.461 GUI Programming I
+    Created on December 8, 2015 @ 10:34am
+
+    This is the style sheet for the scrabble page
+
+*/
+
+/* Headers */
+h1, h5{
+    text-align: center;
+}
+
+ /* Main page */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Wrapper for entire gameboard and tileboard */
+#content{
+    background: beige;
+    border-style: solid;
+    height: 500px;
+    width:  1200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+gameboard{
+    background: beige;
+    padding: 5px;
+    position: absolute;
+    width: 100%;
+}
+
+/* Scoreboard layout */
+#score{
+    bottom: 50%;
+    position: absolute;
+    width: 100%;
+}
+
+/* Button layout */
+#buttons{
+    background: white;
+    bottom: 40%;
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Key */
+#key{
+    background: white;
+    bottom: 30%;
+    position: absolute;
+    padding: 5px;
+    width: 100%;
+}
+
+/* Tileboard where pieces go */
+#tileboard{
+    background: burlywood;
+    border-top-style: solid;
+    bottom: 0;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+}
+
+/* Slot on the tileboard for the tiles */
+.slot{
+    background: gray;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+/* Empty tiles where pieces go */
+.droppable{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
+
+/* Scrabble tiles */ 
+.gametile{ 
+    background: lightblue;
+    display: inline-block;
+    font-size: 200%;
+    height: 100px; 
+    width: 100px; 
+    text-align: center; 
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Jasmine Moran, jasmine_moran@student.uml.edu
+        University of Massachusetts Lowell Computer Science Undergraduate
+        91.461 GUI Programming I
+        Created on December 8, 2015 @ 10:34am
+
+        This page simulates part of a scrabble board
+        -->
+
+        <title>Jasmine Moran</title>
+        <meta name="Author" content="Jasmine Moran, jasmine_moran@student.uml.edu">
+
+        <!-- Using  W3.CSS to style page -->
+        <!-- NOTE: Received help on W3.CSS from Ramon Meza -->
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+        <!-- CSS for specific sections of the page. Learned from W3Schools website -->
+        <link href="css/scrabblestyles.css" rel="stylesheet">
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+        
+        <!-- Personal Scripts -->
+        <script type="text/javascript" src="javascripts/scrabble_dragdrop.js"></script>
+        
+    </head>
+ 
+    <body onload="draw()">
+        <header>
+                <h1>SCRABBLE</h1>
+                <h5>Where letters can be placed and the points don't matter.</h5>
+        </header>
+
+        <!-- Received help from Zachary Wong on basic div setup for board -->
+        <div id="content">
+            <br><br>
+            
+            <!-- Score -->
+            <div id="score">Score:</div>
+            
+            <!-- This is the main gameboard where pieces can be placed on the empty slots -->
+            <div id="gameboard">
+                <div class="droppable"><img src="img/scrabble_emptytile.png" alt="empty_tile"/></div>
+                <div class="droppable"><img src="img/scrabble_emptytile.png" alt="empty_tile"/></div>
+                <div class="droppable"><img src="img/scrabble_double.png" alt="double_tile"/></div>
+                <div class="droppable"><img src="img/scrabble_emptytile.png" alt="empty_tile"/></div>
+                <div class="droppable"><img src="img/scrabble_triple.png" alt="triple_tile"/></div>
+                <div class="droppable"><img src="img/scrabble_emptytile.png" alt="empty_tile"/></div>
+                <div class="droppable"><img src="img/scrabble_emptytile.png" alt="empty_tile"/></div>
+            </div>
+            <br><br>
+            
+            <!--  Key for player to identify point value for each tile -->
+            <div id="key">
+                <img src="img/scrabble_emptytile_key.png" alt="basic_key"/> = Basic Tile
+                <img src="img/scrabble_double_key.png" alt="double_key"/> = Double Tile (2x Points)
+                <img src="img/scrabble_triple_key.png" alt="triple_key"/> = Triple Tile (3x Points)
+            </div>
+            
+            <!-- Contains the 'Submit' and 'Reset' buttons -->
+            <div id="buttons">
+                <button id="Submit">Submit</button><span></span>
+                <button id="Restart" onclick="draw()">Restart Game</button><span></span>
+            </div>
+            <br><br>
+            
+            <!-- This is the tileboard in which the scrabble pieces will be placed -->
+            <div id="tileboard">
+                <div class="slot"><div class="gametile" id="tile1"><p></p></div></div>
+                <div class="slot"><div class="gametile" id="tile2"><p></p></div></div>
+                <div class="slot"><div class="gametile" id="tile3"><p></p></div></div>
+                <div class="slot"><div class="gametile" id="tile4"><p></p></div></div>
+                <div class="slot"><div class="gametile" id="tile5"><p></p></div></div>
+                <div class="slot"><div class="gametile" id="tile6"><p></p></div></div>
+                <div class="slot"><div class="gametile" id="tile7"><p></p></div></div>
+            </div>
+        </div>
+    </body>
+</html>

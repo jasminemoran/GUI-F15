@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+
+        <!--
+        Jasmine Moran, jasmine_moran@student.uml.edu
+        University of Massachusetts Lowell Computer Science Undergraduate
+        91.461 GUI Programming I
+        Created on November 19, 2015 @ 10:35am
+
+        This page will be using JQuery UI to make sliders / tabs
+        -->
+        
+        <title>Assignment 8</title>  
+        <meta name="Author" content="Jasmine Moran, jasmine_moran@student.uml.edu">
+        
+        <!--NOTE: Had some troubles with libraries. Received help with linking from Zachary Wong -->
+        <!-- JQuery Scripts -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+        
+        <!-- JQuery CSS -->
+        <link rel='stylesheet' href='validation_style.css'/>
+        <link rel="stylesheet" href="css/smoothness/jquery-ui-1.8.9.custom.css">
+        <link rel='stylesheet' href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"/>
+        
+        <!-- Personal CSS / Javascript -->
+        <link href="css/widgetstyles.css" rel="stylesheet" type="text/css"/>
+        <script src="javascripts/widget_table.js" type="text/javascript"></script>
+        
+    </head>
+    
+    <body>
+
+        <h3>Assignment 8 - Widgets</h3>
+
+        <div id="section1">
+
+            <p>Enter values for the following:<br>
+               (Minimum Value entries must be smaller than Maximum Value entries)
+            </p>
+
+            <!-- NOTE: The sliders look awkward being so close to the number values. Fix later. -->
+            <table id="entry">
+                <tr>
+                    <td>Minimum Row Value:</td>
+                    <td><input type="number" id="rowMinValue"></td>
+                    <td id="slider1"><div id="rowMin"></div></td>
+                </tr>
+
+                <tr>
+                    <td>Maximum Row Value:</td>
+                    <td><input type="number" id="rowMaxValue"></td>
+                    <td id="slider2"><div id="rowMax"></div></td>
+                </tr>
+
+                <tr>
+                    <td>Minimum Column Value:</td>
+                    <td><input type="number" id="colMinValue"></td>
+                    <td id="slider3"><div id="colMin"></div></td>
+                </tr>    
+
+                <tr>
+                    <td>Maximum Column Value:</td>
+                    <td><input type="number" id="colMaxValue"></td>
+                    <td id="slider4"><div id="colMax"></div></td>
+                </tr>
+            </table>
+
+            <!-- Click the button and magic happens. Kinda. -->
+            <div id="buttons">
+                <input id="addTab" type="button" value="Add Tab">
+                <input id="removeTab" type="button" value="Delete All Tabs">
+            </div>
+
+            <!-- Tabs and table are made here -->
+            <div id="tabs">
+                <div id ="results"><ul></ul></div>
+            </div>
+        </div>
+    </body>
+</html>

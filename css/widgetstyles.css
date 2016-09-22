@@ -1,0 +1,95 @@
+/* 
+    Jasmine Moran, jasmine_moran@student.uml.edu
+    University of Massachusetts Lowell Computer Science Undergraduate
+    91.461 GUI Programming I
+    Created on November 19, 2015 @ 10:12pm
+
+    This is the style sheet for Assignment 8
+*/
+
+/*NOTE: This doesn't seem to be working. Whoops. */
+@font-face {
+  font-family: '8bitoperator Regular';
+  src: url('http://www.fontsaddict.com/fontface/8bitoperator-regular.ttf');
+}
+
+/* Background color for page and default text color */
+body{
+    background: black;
+    text-align: center;
+    color: white;
+    font-family: '8bitoperator Regular';
+}
+
+/* h1 and h3 text will be centered */
+h1{
+    color: white;
+    text-align: center;
+}
+
+/* Table output will have a white background and black centered text */
+/* NOTE: Need to fix table so that it isn't covering an entire section of the page */
+#dynamicTable{
+    color: black;
+    background:white;
+    text-align: center;
+}
+
+#section1{
+    border: 5px solid white;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    width: 50em;
+}
+
+/* Adjusting slider lengths */
+/* NOTE: CSS Filters why u no work? Fix later. */
+#slider1{
+    width: 100px;
+}
+#slider2{
+    width: 100px;
+}
+#slider3{
+    width: 100px;
+}
+#slider4{
+    width: 100px;
+}
+
+/* Borders and color for table */
+table{
+    margin: 0 auto;
+    border: 1px;
+}
+table tr{
+    border: 1px solid black;
+}
+table td{
+    border: 1px solid black;
+}
+table th{
+    border: 1px solid black;
+    background: gray;
+}
+
+/* Input text will be black, since default page text is white */
+input[type="number"]{
+    color:black;
+    width: 30px;
+    margin: 10px;
+}
+    
+/* With every new tab and table, results updates */
+#results{
+    margin: 0 auto;
+    color:black;
+    text-align: center;
+}
+
+#tabs{
+    margin: 0 auto;
+    color:black;
+    text-align: center;
+}

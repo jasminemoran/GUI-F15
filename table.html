@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+
+        <!--
+        Jasmine Moran, jasmine_moran@student.uml.edu
+        University of Massachusetts Lowell Computer Science Undergraduate
+        91.461 GUI Programming I
+        Created on October 19, 2015 @ 10:53pm
+
+        This page will be using JavaScript - The user will be making inputs to create multiplication table.
+        -->
+        
+        <title>Table</title>    
+        <meta name="Author" content="Jasmine Moran, jasmine_moran@student.uml.edu">
+
+        <!-- Using  W3.CSS to style page -->
+        <!-- NOTE: Received help on W3.CSS from Ramon Meza -->
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+        <!-- CSS for specific sections of the page. Learned from W3Schools website -->
+        <link href="css/tablestyles.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <h1> Assignment 6 - Tables </h1>
+        
+        <!-- Entry form for table - Entering min and max values for rows and columns -->
+            <div id="section1">
+                <form id="submission">
+                    <p>Enter values for the following:<br>
+                        (All entries must be positive)</p>
+
+                    <p>
+                        Minimum Row Value:
+                        <input id="rowMin" type="number">
+
+                        Minimum Column Value:
+                        <input id="colMin" type="number"><br>
+
+                        Maximum Row Value:    
+                        <input id="rowMax" type="number">
+
+                        Maximum Column Value:
+                        <input id="colMax" type="number"><br>
+                    </p>
+                    
+                    <!-- Click the button and magic happens. Kinda. -->
+                    <p><input id="submit" type="button" onclick="table()" value="Submit"></p>
+                </form>
+            </div>
+       
+        <!-- We put table here -->
+        <div id ="results">   
+        <table id="dynamicTable"></table>
+        </div>
+        
+            <!-- Received help on script section below from Zachary Wong -->
+            <!-- Referenced code from following link -->
+            <!-- http://stackoverflow.com/questions/28777440/how-to-make-a-simple-5-line-javascript-multiplication-table-for-loop -->
+            <!-- NOTE: The code works, but it is not super pretty. Gotta fix this. -->
+            <!-- Expect to build better code for this section later on -->
+            
+            <script>
+                function table(){
+                    //tableBuf will add the html into the table above ('dynamicTable')
+                    var tableBuf = "";
+                    
+                    //Grabbing entry info from the form
+                    var rowMin = document.getElementById("rowMin").value;
+                    var rowMax = document.getElementById("rowMax").value;
+                    var colMin = document.getElementById("colMin").value;
+                    var colMax = document.getElementById("colMax").value;
+                    
+                    //Check if any of the entries is left blank
+                    //NOTE: Fix later
+                    /*if(rowMin === "" || rowMax === "" || colMin === "" || colMax  === ""){
+                        tableBuf = "<h2>An entry was not made. Please enter a value.</h2>";
+                    }else{ */
+                    
+                    //Shifting row/column entries for proper table
+                    rowMin--; rowMax++; colMax++;
+                   
+                    
+                    //If at any point the user enters zero or a negative number
+                    //Print out error for user to know
+                    if(rowMin < 0 || rowMax < 0 || colMin < 0 || colMax < 0){
+                        tableBuf = "<h2>An entry was either not made or is less than zero.<br>Please make all entries positive.</h2>";
+                    }else if(rowMin > rowMax || colMin > colMax){
+                        //If any minimum entry is larger than that of maximum, we let user know that's invalid
+                        tableBuf = "<h2>An entry for the minimum value was greater than the maximum value.<br>Please make value for the minimum value less than the maximum<h2>";
+                    }else{
+                        //Otherwise, make a multiplication table
+                        //Create row
+                        for(var i = rowMin; i < rowMax; i++) {
+                            tableBuf += "<tr>";
+                            //Blank spot for the first position of row/column
+                            if(i === rowMin){
+                                tableBuf += "<th class=\"blankbox\"></th>";
+                            }else{
+                                tableBuf += "<th>" + i + "</th>";
+                            }
+                            
+                            //Creating column
+                            for(var j = colMin; j < colMax; j++) {
+                                if(i == rowMin) {
+                                    tableBuf += "<th>" + j + "</th>";
+                                }else{
+                                    //Bam. Multiplication.
+                                    tableBuf += "<td>" + ( i * j ) + "</td>";
+                                }
+                            }
+                            tableBuf += "</tr>";
+                        }
+                    }
+                
+                //This is where the html made fromt this script goes into the table section 'dynamicTable'
+                document.getElementById("dynamicTable").innerHTML = tableBuf;
+                }
+            </script>
+        </body>
+</html>

@@ -1,0 +1,70 @@
+/*
+
+    Jasmine Moran, jasmine_moran@student.uml.edu
+    University of Massachusetts Lowell Computer Science Undergraduate
+    91.461 GUI Programming I
+    Created on October 6th, 2015 @ 10:43pm
+
+    This is the style sheet for assignment 5 to format text
+
+*/
+
+/* Background color for page */
+body{
+    background: #343156;
+}
+
+/* Modifying header, which centers and adds color to the title, author, and date */
+header{
+    background: #000000;
+    color: #365266;
+    text-align: center;
+}
+
+/* Modifying text alignment for paragraphs */
+#content{
+    text-align: center;
+}
+
+/* Adding color to specific paragraphs */
+/* NOTE: Intended to do so for lines, but was unable to do so. */
+
+/* First paragraph */
+#content p:nth-of-type(1){
+  color: #29A3A3;
+}
+
+/* Second paragraph */
+#content p:nth-of-type(2){
+  color: #CC0000;
+}
+
+/* Third paragraph */
+#content p:nth-of-type(3){
+  color: #A366A3;
+}
+
+/* Fourth paragraph */
+#content p:nth-of-type(4){
+  color: #1975FF;
+}
+
+/* Fifth paragraph */
+#content p:nth-of-type(5){
+  color: #129252;
+}
+
+/* Sixth paragraph */
+#content p:nth-of-type(6){
+  color: #B84A00;
+}
+
+/* Seventh paragraph */
+#content p:nth-of-type(7){
+  color: #FFFFFF;
+}
+
+/* Eigth paragraph */
+#content p:nth-of-type(8){
+  color: #CCCC00;
+}

@@ -1,0 +1,69 @@
+/* 
+    Jasmine Moran, jasmine_moran@student.uml.edu
+    University of Massachusetts Lowell Computer Science Undergraduate
+    91.461 GUI Programming I
+    Created on October 20, 2015 @ 2:35pm
+
+    This is the style sheet for Assignment 6
+*/
+
+/*NOTE: This doesn't seem to be working. Whoops. */
+@font-face {
+  font-family: '8bitoperator Regular';
+  src: url('http://www.fontsaddict.com/fontface/8bitoperator-regular.ttf');
+}
+
+/* Background color for page and default text color */
+body{
+    background: black;
+    text-align: center;
+    color: white;
+    font-family: '8bitoperator Regular';
+}
+
+/* h1 and h3 text will be centered */
+h1{
+    color: white;
+    text-align: center;
+}
+
+/* Table output will have a white background and black centered text */
+/* NOTE: Need to fix table so that it isn't covering an entire section of the page */
+#dynamicTable{
+    color: black;
+    background:white;
+}
+
+#section1{
+    border: 5px solid white;
+}
+
+//Borders and color for table
+#dynamicTable{
+    border: 1px; 
+    cellpadding: 5px; 
+    cellspacing: 0px;
+}
+#dynamicTable tr{
+    border: 1px solid black;
+}
+#dynamicTable td{
+    border: 1px solid black;
+}
+#dynamicTable th{
+    border: 1px solid black;
+    background: gray;
+}
+
+/* Input text will be black, since default page text is white */
+input{
+    color:black;
+}
+
+/* There is a div tag named 'results' that will tell the user */
+/* If an entry is invalid (if any entry was less than 0) */
+/* Because page text is white, making sure this output is in black */
+/* NOTE: Will also try to fix this */
+#results{
+    color:black;
+}

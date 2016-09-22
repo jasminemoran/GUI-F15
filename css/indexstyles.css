@@ -1,0 +1,79 @@
+/*
+
+    Jasmine Moran, jasmine_moran@student.uml.edu
+    University of Massachusetts Lowell Computer Science Undergraduate
+    91.461 GUI Programming I
+    Created on September 9, 2015 @ 9:47am
+
+    This is the style sheet for the index and assignment pages
+
+*/
+
+/* Background color for page */
+body{
+    background: #ba9077;
+}
+
+/* Center headings (For the main section and assignment titles) */
+h3{
+    text-align: center;
+    font-family: 'Coda', serif;
+}
+h4{
+    text-align: center;
+    font-family: 'Coda', serif;
+}
+
+/* Adding color for every bullet to any lists created */
+li:nth-child(odd){ 
+    background: #607d8b; 
+}
+    
+/* Style for header (Located at the very top of page) */
+header{ 
+    background: #1d2120;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Coda', serif;
+    text-shadow: 4px 4px 4px #607d8b; 
+}
+
+/* Style for sidebar (Profile icon and the navigation bar) */
+#profileicon{
+    background: #5a5c51;
+    padding: 10px;
+}
+#navigation{
+    background: #ba9077;
+    color: #ffffff;
+    width: 25%;
+}
+
+/* Style for main section of index page */
+#main{
+    background: #5a5c51;
+    margin-left: 25%
+}
+#about{
+    color: #ffffff;
+    padding: 5px;
+}
+#voiceover{
+    color: #ffffff;
+    padding: 5px;
+}
+#skyhook{
+    text-align: center;
+}
+#pixelart{
+    color: #ffffff;
+    padding: 5px;
+}
+
+
+/* Style for footer */
+footer{ 
+    background: #1d2120;
+    color: #ffffff;
+    text-align: right;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+
+        <!--
+        Jasmine Moran, jasmine_moran@student.uml.edu
+        University of Massachusetts Lowell Computer Science Undergraduate
+        91.461 GUI Programming I
+        Created on October 19, 2015 @ 10:53pm
+
+        This page is a duplicated version of Assignment 6.
+        This page will be using JQuery - The user will be making inputs to create multiplication table while being guided to do proper entries.
+        -->
+        
+        <title>Table</title>    
+        <meta name="Author" content="Jasmine Moran, jasmine_moran@student.uml.edu">
+        
+        <!-- JQuery Library -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        
+        <!-- jQuery Validation Plugin from http://bassistance.de/jquery-plugins/jquery-plugin-validation/ -->
+        <script src="javascripts/jquery.validate.js" type="text/javascript"></script>
+        <script src="javascripts/additional-methods.js" type="text/javascript"></script>
+        
+        <!-- Personal JavaScript/JQuery files -->
+        <script src="javascripts/table2_validation.js" type="text/javascript"></script>
+
+        <!-- Using  W3.CSS to style page -->
+        <!-- NOTE: Received help on W3.CSS from Ramon Meza -->
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+        <!-- CSS for specific sections of the page. Learned from W3Schools website -->
+        <link href="css/tablestyles.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <h1> Assignment 7 - Tables with JQuery </h1>
+        
+        <!-- Entry form for table - Entering min and max values for rows and columns -->
+            <div id="section1">
+                <form id="submission">
+                    <p>Enter numeric values for the following:<br>
+                        (All entries must be positive)</p>
+
+                    <p>
+                        Minimum Row Value:
+                        <input id="rowMin" type="number" placeholder="Minimum Value">
+
+                        Minimum Column Value:
+                        <input id="colMin" type="number" placeholder="Minimum Value"><br>
+
+                        Maximum Row Value:    
+                        <input id="rowMax" type="number" placeholder="Maximum Value">
+
+                        Maximum Column Value:
+                        <input id="colMax" type="number" placeholder="Maximum Value"><br>
+                    </p>
+                    
+                    <!-- Click the button and magic happens. Kinda. -->
+                    <p><input id="submit" type="button" value="Submit"></p>
+                </form>
+                <p id="error"></p>
+            </div><br>
+       
+            <!-- We put table here -->
+            <div id ="results"></div>
+        </body>
+</html>

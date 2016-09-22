@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US"  >
+    <head>
+        <meta charset="utf-8">
+
+        <!--
+        Jasmine Moran, jasmine_moran@student.uml.edu
+        University of Massachusetts Lowell Computer Science Undergraduate
+        91.461 GUI Programming I
+        Created on September 9, 2015 @ 10:29pm
+
+        This page shows current and future assignments.
+        -->
+
+        <title>Jasmine Moran</title>
+        <meta name="Author" content="Jasmine Moran, jasmine_moran@student.uml.edu">
+
+        <!-- Google Fonts, used to change the font of text -->
+        <!-- NOTE: Planned to add more fonts besides Coda: Maybe PT Sans and Arvo -->
+        <link href='https://fonts.googleapis.com/css?family=Coda:400,300,500,700' rel='stylesheet' type='text/css'>
+
+        <!-- Using  W3.CSS to style page -->
+        <!-- NOTE: Received help on W3.CSS from Ramon Meza -->
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+        <!-- CSS for specific sections of the page. Learned from W3Schools website -->
+        <link href="css/indexstyles.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <!-- Header: Name, Course, Quote -->
+        <header>
+            <h1>Jasmine Moran</h1>
+            <h5>91.461 - GUI Programming I</h5>
+                "Keep Moving Forward."<br> - Monty Oum<br><br>
+        </header>
+
+        <!-- Sidebar: Located on the left side of the page. Contains profile icon and navigation bar -->
+        <!-- NOTE: Learned about using style to deal with navigation and sections of pages from W3.CSS Navigation (link below) -->
+        <!-- http://www.w3schools.com/w3css/w3css_navigation.asp -->
+
+        <nav id="navigation" class="w3-sidenav w3-center">
+            <br><img id="profileicon" class="w3-card-8" alt="Profile Icon" src="img/icon.jpg"/><br><br>
+            <a href="index.html">Home</a> 
+            <a href="assignment.html">Assignments</a>
+        </nav>
+
+        <!-- Main: Assignments -->
+       <div id="main" class="w3-container">
+
+            <!-- Navigation for assignments -->
+            <!-- NOTE: Learned from W3.CSS Navigation page -->
+            <nav id="assignmentstab" class="w3-topnav w3-center w3-blue-grey">
+                <a href="#intro"></a>
+                <a href="#assign1">Setting Up to Take This Course</a>
+                <a href="#assign2">Creating Your First Web Page</a>
+                <a href="#assign3">Styling Your First Web Page With CSS</a><br>
+                <a href="#assign4">Posting a Page to Github</a>
+                <a href="#assign5">Formatting Dynamic Text</a>
+                <a href="#assign6">Creating an Interactive Dynamic Table</a><br>
+            </nav>
+
+            <div class="w3-tab">
+
+                <!-- NOTE: Sentence descriptions come from the course assignments themselves -->
+                <!-- https://teaching.cs.uml.edu/~heines/91.461/91.461-2015-16f/assignments.jsp -->
+                <!-- ... Of course, this requires you to log in -->
+                <div id="intro" class="w3-container" style="color:white">
+                    <h3>Introduction</h3>
+                    <p>This page will show current and future assignments.</p>
+                    <p>Click on the assignment name above to view.</p>
+                </div>  
+
+                <div id="assign1" class="w3-container" style="color:white">
+                    <h3>Setting Up to Take This Course</h3>
+                    <p>"This write-up therefore leads you through installing XAMPP, 
+                        a package that integrates a complete web development environment on either Windows or Macintosh systems"</p>
+                </div>
+
+                <div id="assign2" class="w3-container" style="color:white">
+                    <h3>Creating Your First Web Page</h3>
+                    <p>"In this assignment you will create your first web page."</p>
+                    <a href="index.html">Click here to view this assignment page</a>
+                </div>
+
+                <div id="assign3" class="w3-container" style="color:white">
+                    <h3>Styling Your First Web Page With CSS</h3>
+                    <p>"This assignment builds on Assignment No. 2."<br>
+		    "You are to enhance that page with additional HTML techniques and apply CSS to your HTML to give your page some basic styling."</p>
+                    <a href="index.html">Click here to view this assignment page</a>
+                    
+                    <h4>Source Codes</h4>
+                    <ul>                       
+                        <li><a href="view-source:http://jasminemoran.github.io/GUI_S15/index.html">Click here to view the source code for the home page.</a></li>
+                        <li><a href="view-source:http://jasminemoran.github.io/GUI_S15/assignment.html">Click here to view the source code for the assignments page.</a></li>
+                        <li><a href="view-source:http://jasminemoran.github.io/GUI_S15/css/indexstyles.css">Click here to view the source code for the CSS.</a></li>
+                    </ul>
+                </div>
+                
+                <div id="assign4" class="w3-container" style="color:white">
+                    <h3>Posting a Page to GitHub</h3>
+                    <p>"All you have to do is repost your solution to Assignment No. 3 on GitHub in such a way that we can view it in a browser."</p>
+                    <a href="http://jasminemoran.github.io/GUI_S15">Click here to view this assignment page</a>
+                </div>
+                
+                <div id="assign5" class="w3-container" style="color:white">
+                    <h3>Formatting Dynamic Text</h3>
+                    <p>"This assignment involves formatting text.
+                        However, the assignment includes a twist: the text you are to format will be read from a data structure, not hard-coded within your HTML pages. "</p>
+                    <a href="desiderata.html">Click here to view this assignment page</a>
+                    
+                    <h4>Source Codes</h4>
+                    <ul>                       
+                        <li><a href="view-source:http://jasminemoran.github.io/GUI_S15/desiderata.html">Click here to view the source code for the assignment.</a></li>
+                        <li><a href="view-source:http://jasminemoran.github.io/GUI_S15/ehrmann.json">Click here to view the JSON file.</a></li>
+                        <li><a href="view-source:http://jasminemoran.github.io/GUI_S15/poemstyles.css">Click here to view the source code for the CSS.</a></li>
+                    </ul>
+                </div>
+                
+                <div id="assign6" class="w3-container" style="color:white">
+                    <h3>Creating an Interactive Dynamic Table</h3>
+                    <p>"This is the first assignment in which you must use JavaScript that you write yourself."</p>
+                    <a href="table.html">Click here to view this assignment page</a>
+                    
+                    <h4>Source Codes</h4>
+                    <ul>                       
+                        <li><a href="view-source:http://jasminemoran.github.io/GUI_S15/table.html">Click here to view the source code for the assignment.</a></li>
+                        <li><a href="view-source:http://jasminemoran.github.io/GUI_S15/css/tablestyles.css">Click here to view the source code for the CSS.</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer: Copyright. -->
+        <footer>     
+                Copyright 2015 Jasmine Moran
+        </footer>
+
+    </body>
+</html>
