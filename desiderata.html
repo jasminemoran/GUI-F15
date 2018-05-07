@@ -8,15 +8,15 @@
                 91.461 GUI Programming I
                 Created on October 6th, 2015 @ 11:12pm
 
-                This page will introduce myself and will link to my assignments in this course
+                This assignment involves formatting text read from a data structure. Specifically, JSON.
         -->
-        
+
         <!-- CSS for specific sections of the page. -->
         <link href="css/poemstyles.css" rel="stylesheet">
 
         <!-- NOTE: Starting from here, this section of code comes from the assignment page -->
         <!-- https://teaching.cs.uml.edu/~heines/91.461/91.461-2015-16f/461-assn/FormattingText-v05.jsp -->
-        
+
         <!--
           load jQuery library from the Google Content Delivery Network (CDN)
           see http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/
@@ -35,14 +35,14 @@
             }, "json" );  // be sure to include this third parameter for weblab.cs.uml.edu
           });
         </script>
-        
+
         <!-- script to place JSON text in the placeholder on this page -->
         <!-- NOTE: The following section below has modified code from what was given on the assignment page. -->
         <script type="text/javascript">
             // N.B.  This version *does* apply the CSS.
             function placeContent( poem ) {
                 var strContent = "";
-               
+
 
             // create dynamic content from JSON
             strContent += "<header><h1 class='title'>" + poem.title + "</h1>" ;
@@ -51,18 +51,18 @@
             // loop through all the paragraphs and sentences
             for ( var para = 0 ; para < poem.text.paragraphs.length ; para++ ) {
 
-                
+
                 strContent += "<p>" ;
                 for ( var sent = 0 ; sent < poem.text.paragraphs[para].length ; sent++ ) {
-                    
+
                     //Search for specific lines to apply CSS
                     //Planned to use to find specific words, but couldn't figure out
                     //Reference: http://stackoverflow.com/questions/10679580/javascript-search-inside-a-json-object
-                    
+
                     //   if(poem.text.paragraphs[para] == poem.text.paragraphs[0]){
                     //       strContent += <span> poem.text.paragraphs[para] </span>
                     //  }
-                    
+
                     //Break line for poem
                     strContent += poem.text.paragraphs[para][sent] + "<br>" ;
                 }
@@ -74,16 +74,16 @@
             $("#content").html( strContent ) ;
           }
         </script>
-        
+
         <!-- End of copied section -->
 
         <title>Desiderata</title>
     </head>
-    
+
     <body>
- 
+
         <!-- Content from JSON file -->
         <div id="content"></div>
- 
+
     </body>
 </html>

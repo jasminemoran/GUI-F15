@@ -1,3 +1,4 @@
-# GUI_S15
+# GUI_F15
 
-GUI Assignments
+Graphic User Interface I (Fall, 2015)
+These are the assignments given and completed throughout the course.

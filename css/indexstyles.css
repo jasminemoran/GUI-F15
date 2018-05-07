@@ -25,17 +25,17 @@ h4{
 }
 
 /* Adding color for every bullet to any lists created */
-li:nth-child(odd){ 
-    background: #607d8b; 
+li:nth-child(odd){
+    background: #607d8b;
 }
-    
+
 /* Style for header (Located at the very top of page) */
-header{ 
+header{
     background: #1d2120;
     color: #ffffff;
     text-align: center;
     font-family: 'Coda', serif;
-    text-shadow: 4px 4px 4px #607d8b; 
+    text-shadow: 4px 4px 4px #607d8b;
 }
 
 /* Style for sidebar (Profile icon and the navigation bar) */
@@ -72,7 +72,7 @@ header{
 
 
 /* Style for footer */
-footer{ 
+footer{
     background: #1d2120;
     color: #ffffff;
     text-align: right;
